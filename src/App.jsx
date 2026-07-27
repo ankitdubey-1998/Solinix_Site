@@ -1,5 +1,5 @@
 
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, useLocation  } from "react-router-dom"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
@@ -14,12 +14,15 @@ import CursorGlow from "./components/CursorGlow"
 
 
 const App = () => {
+
+  const location = useLocation();
+
   return (
     <div className="h-screen flex-1 pt-24">
       <CursorGlow />
       <Navbar />
        <ScrollToTop />
-      <Routes>
+      <Routes location={location} key={location.pathname}>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/services' element={<Services />} />

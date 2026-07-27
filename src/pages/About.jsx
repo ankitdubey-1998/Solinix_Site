@@ -14,19 +14,19 @@ const features = [
     icon: <FaMedal size={34} color="white" />,
     title: "Quality",
     description: "Secure, scalable, and reliable solutions built to last.",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+    image: "https://images.unsplash.com/photo-1560264418-c4445382edbc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHF1YWxpdHl8ZW58MHx8MHx8fDA%3D",
   },
   {
     icon: <FaHandshakeSimple size={34} color="white" />,
     title: "Partnership",
     description: "We believe in long-term partnerships and shared success.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGNvcnBvcmF0ZXxlbnwwfHwwfHx8MA%3D%3D",
   },
 ];
 
 const About = () => {
   return (
-    <section id="about" className="relative py-20 overflow-hidden bg-linear-to-b from-white via-purple-50/40 to-white">
+    <section id="about" className="relative py-15 overflow-hidden bg-linear-to-b from-white via-purple-50/40 to-white">
 
       {/* Background mesh */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -41,16 +41,15 @@ const About = () => {
         {/* Header */}
         <FadeInSection>
           <div className="text-center max-w-3xl mx-auto mb-16">
-             <span className="inline-block text-purple-700 font-semibold uppercase tracking-widest text-sm bg-purple-100 px-4 py-1.5 rounded-full mb-5">
+            <span className="inline-block text-purple-700 font-semibold uppercase tracking-widest text-sm bg-purple-100 px-4 py-1.5 rounded-full mb-5">
               About Us
             </span>
 
-            <h2 className=" text-3xl md:text-4xl font-bold mb-4">
-              WHO WE ARE
-            </h2>
-            <h2 className="md:text-4xl font-bold mb-4">
-              <span className="text-2xl bg-linear-to-r from-blue-900 to-purple-700 bg-clip-text text-transparent">
-               Not Just Coders — Your Tech Growth Partner
+            
+           <h2 className="text-4xl font-bold mt-2">
+              Not Just Coders {" "}
+              <span className="bg-linear-to-r from-blue-900 to-purple-700 bg-clip-text text-transparent">
+                Your Tech Growth Partner
               </span>
             </h2>
 
@@ -73,16 +72,16 @@ const About = () => {
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-linear-to-br from-blue-950/85 to-purple-900/80"></div>
+                  <div className="absolute inset-0 bg-linear-to-br from-blue-950/35 to-purple-900/35"></div>
 
                   {/* Content */}
-                  <div className="relative z-10 p-8 text-white flex flex-col h-full justify-between">
-                    <div>
-                      <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6">
+                  <div className="relative z-10 flex h-full items-end p-8">
+                    <div className="w-full">
+                      <div className="w-14 h-14 rounded-2xl bg-linear-to-r from-purple-600 to-blue-900 flex items-center justify-center shadow-lg mb-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
                         {feature.icon}
                       </div>
 
-                      <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
+                      <h3 className="text-2xl text-white font-bold mb-3">{feature.title}</h3>
 
                       <p className="text-gray-200">{feature.description}</p>
                     </div>

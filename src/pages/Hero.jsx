@@ -49,7 +49,7 @@ const Hero = () => {
       
 
         {/* Heading */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight drop-shadow-lg">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight drop-shadow-lg">
           Building Digital Solutions
           <br />
           <span className="bg-linear-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">

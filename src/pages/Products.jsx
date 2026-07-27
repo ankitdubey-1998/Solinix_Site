@@ -1,5 +1,6 @@
 import { FaHome, FaBuilding, FaUsers, FaArrowRight } from "react-icons/fa";
 import FadeInSection from "../components/FadeInSection";
+import hrmsImg from "../assets/HRMS_app.png";
 
 const products = [
   {
@@ -7,7 +8,7 @@ const products = [
     subtitle: "Rental Platform",
     icon: <FaHome />,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32iJniuKgQ9sRLGRxlotuha6n14CZU8DWJy_4743PhQ&s",
-    url: "https://pgmove.in",
+   
   },
   {
     title: "Stayzzy.in",
@@ -17,10 +18,10 @@ const products = [
     url: "https://stayzzy.in",
   },
   {
-    title: "HRMS",
+    title: "HRms.in",
     subtitle: "Coming Soon",
     icon: <FaUsers />,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm4cSfl9_2bsPjTmT1Rh4zMFgr8SCivhL1gCJTanEjow&s=10",
+    img: hrmsImg,
     url: "https://hrms.yourdomain.com",
   },
 ];
@@ -55,16 +56,16 @@ export default function Products() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((item, index) => (
             <FadeInSection key={item.title} delay={index * 0.15}>
-              <div className="relative h-107.5 rounded-3xl overflow-hidden group shadow-xl">
+              <div className="relative aspect-4/5 rounded-3xl overflow-hidden group shadow-xl">
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                 className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                 />
 
-                <div className="absolute inset-0 bg-linear-to-t from-black via-black/60 to-black/20" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent" />
 
-                <div className="absolute top-0 right-0 w-40 h-40 bg-purple-500/20 blur-3xl rounded-full" />
+                <div className="absolute top-0 right-0 w-40 h-40 bg-purple-500/10 blur-3xl rounded-full" />
 
                 <div className="relative z-10 h-full flex flex-col justify-between p-6 text-white">
                   <div className="flex justify-between">

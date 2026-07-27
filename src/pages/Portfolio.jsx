@@ -122,14 +122,14 @@ const Portfolio = () => {
             <FadeInSection key={project.title} delay={index * 0.1}>
               <div className="group rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 bg-white/90 backdrop-blur-sm">
                 {/* Image header with gradient overlay */}
-                <div className="relative h-54 overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="absolute inset-0 w-full h-96 object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className={`absolute inset-0 ${project.gradient}`} />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent" />
 
                   <div className="relative z-10 h-full flex flex-col justify-end p-6">
                    

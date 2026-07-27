@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="-mt-15 relative py-24 overflow-hidden bg-linear-to-b from-white via-purple-50/40 to-white">
+    <section className=" relative py-18 overflow-hidden bg-linear-to-b from-white via-purple-50/40 to-white">
 
       {/* Background mesh */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -48,7 +48,7 @@ const Contact = () => {
               Contact Us
             </span>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-3">
+            <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mt-3">
               Let's Build Something{" "}
               <span className="bg-linear-to-r from-purple-600 to-blue-800 bg-clip-text text-transparent">
                 Amazing Together
@@ -60,10 +60,7 @@ const Contact = () => {
               you. Fill out the form and our team will get back to you shortly.
             </p>
 
-            <div className="mt-6 inline-flex items-center gap-2 bg-white border border-purple-100 shadow-sm rounded-full px-5 py-2 text-sm font-medium text-slate-700">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              Usually responds within 24 hours
-            </div>
+           
           </div>
         </FadeInSection>
 

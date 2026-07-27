@@ -13,13 +13,13 @@ const services = [
     icon: <FaCode />,
     title: "Custom Software Development",
     desc: "Scalable software solutions tailored to your specific business requirements, built with modern enterprise-grade technologies.",
-    image: "https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1206&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://media.istockphoto.com/id/2233679882/photo/two-young-adult-programmers-discussing-code-on-laptop-in-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=PzaTx4WP272kbAqs_EBEEl2yx8nqCbUwTN8Au8Ndm6E=",
   },
   {
     icon: <FaGlobe />,
     title: "Website Development",
     desc: "Responsive, fast and SEO-friendly websites with stunning designs that drive real results and business growth.",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2Vic2l0ZSUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww",
+    image: "https://media.istockphoto.com/id/2151904502/photo/closeup-young-man-software-developers-using-computer-to-write-code-application-program-for-ai.webp?a=1&b=1&s=612x612&w=0&k=20&c=A7XEESVl47DOthvfuYqYhUGp7iRf8FmPjR8cdh4HeIQ=",
   },
   {
     icon: <FaMobileAlt />,
@@ -87,7 +87,7 @@ const Services = () => {
                 />
 
                 {/* Dark gradient overlay for readability */}
-                <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/85 to-slate-900/40 group-hover:from-purple-950 group-hover:via-slate-900/90 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-linear-to-t from-slate-900/65 via-slate-900/20 to-transparent transition-all duration-300 group-hover:from-slate-900/55 group-hover:via-slate-900/10" />
 
                 {/* Icon badge */}
                 <div className="relative z-10 mx-6 mt-6 w-12 h-12 rounded-xl bg-linear-to-r from-purple-600 to-blue-900 text-white flex items-center justify-center text-xl shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-transform">
