@@ -1,97 +1,233 @@
-import { FaHome, FaBuilding, FaUsers, FaArrowRight } from "react-icons/fa";
-import FadeInSection from "../components/FadeInSection";
+import {
+  FaHome,
+  FaBuilding,
+  FaUsers,
+  FaArrowRight,
+  FaCheckCircle,
+} from "react-icons/fa";
 import hrmsImg from "../assets/HRMS_app.png";
 
 const products = [
   {
     title: "PGMove.in",
-    subtitle: "Rental Platform",
+    tagline: "Smart PG & Rental Management Platform",
+    status: "Live Platform",
     icon: <FaHome />,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32iJniuKgQ9sRLGRxlotuha6n14CZU8DWJy_4743PhQ&s",
-   
+    description:
+      "A smart platform that connects people with PGs, hostels and rental accommodations — while helping property owners manage listings and receive quality leads.",
+    stats: [
+      { value: "1,200+", label: "Properties" },
+      { value: "8", label: "Cities" },
+      { value: "5,000+", label: "Active Users" },
+    ],
+    features: [
+      "Smart Property Search",
+      "Digital Rental Agreements",
+      "Lead Automation",
+      "Owner Dashboard",
+      "Occupancy Management",
+      "Tenant Verification",
+    ],
+    img: "https://solinix-website.vercel.app/images/product-pgmove.webp",
+    url: "https://pgmove.in",
+    cta: "Visit PGMove.in",
   },
   {
     title: "Stayzzy.in",
-    subtitle: "Tenant Management",
+    tagline: "Complete PG & Hostel Management System",
+    status: "Live Platform",
     icon: <FaBuilding />,
-    img: "https://stayzzy.in/images/image.png",
+    description:
+      "A complete PG and hostel management platform built for property owners and tenants. Manage listings, collect rent, handle agreements, and grow your occupancy.",
+    stats: [
+      { value: "800+", label: "Properties" },
+      { value: "2,500+", label: "Tenants Managed" },
+      { value: "99.9%", label: "Uptime" },
+    ],
+    features: [
+      "Tenant Management",
+      "Digital Agreements",
+      "Analytics & Reports",
+      "Automated Rent Collection",
+      "Maintenance Ticket System",
+      "Mobile Ownership",
+    ],
+    img: "https://solinix-website.vercel.app/images/product-stayzzy.webp",
     url: "https://stayzzy.in",
+    cta: "Visit Stayzzy.in",
   },
   {
-    title: "HRms.in",
-    subtitle: "Coming Soon",
+    title: "HRMS Engine",
+    tagline: "Intelligent Human Resource Automation",
+    status: "In Beta / Coming Soon",
     icon: <FaUsers />,
+    description:
+      "An intelligent Human Resource Management System designed to simplify workforce management for enterprises and businesses of all sizes — from onboarding to payroll.",
+    stats: [
+      { value: "12+", label: "HR Modules" },
+      { value: "Unlimited", label: "Employees" },
+      { value: "15+", label: "Integrations" },
+    ],
+    features: [
+      "Employee Directory",
+      "Recruitment & Onboarding",
+      "Biometric Attendance",
+      "Automated Payroll",
+      "Leave Management",
+      "Performance Analytics",
+    ],
     img: hrmsImg,
     url: "https://hrms.yourdomain.com",
+    cta: "Coming Soon",
   },
 ];
 
 export default function Products() {
   return (
-    <section className="relative py-20 overflow-hidden bg-linear-to-b from-white via-blue-50/40 to-white">
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-24 -right-24 w-96 h-96 bg-purple-400/25 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 -left-32 w-96 h-96 bg-blue-400/25 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-indigo-300/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-10 left-10 w-64 h-64 bg-purple-200/25 rounded-full blur-3xl" />
-      </div>
-
+    <section className="relative py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <FadeInSection>
-          <div className="text-center mb-14">
-            <span className="inline-block text-purple-700 font-semibold uppercase tracking-widest text-sm bg-purple-100 px-4 py-1.5 rounded-full mb-5">
-              Our Products
-            </span>
 
-            <h2 className="text-4xl font-bold mt-2">
-              Our{" "}
-              <span className="bg-linear-to-r from-blue-900 to-purple-700 bg-clip-text text-transparent">
-                Flagship Products
-              </span>
-            </h2>
-            <p className="text-gray-500 mt-3">Smart solutions for modern businesses.</p>
-          </div>
-        </FadeInSection>
+        {/* Header */}
+        <div className="text-center mb-16">
+          <span className="inline-block text-blue-950 font-semibold uppercase tracking-widest text-sm bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full mb-5">
+            Our Products
+          </span>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((item, index) => (
-            <FadeInSection key={item.title} delay={index * 0.15}>
-              <div className="relative aspect-4/5 rounded-3xl overflow-hidden group shadow-xl">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                 className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-                />
+          <h2 className="text-4xl font-bold text-blue-950 mt-2">
+            Built. Shipped.{" "}
+            <span className="text-blue-600">Actually Used.</span>
+          </h2>
 
-                <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent" />
+          <div className="w-14 h-1 bg-blue-600 rounded-full mx-auto mt-6 mb-6" />
 
-                <div className="absolute top-0 right-0 w-40 h-40 bg-purple-500/10 blur-3xl rounded-full" />
+          <p className="text-slate-500 mt-3 max-w-2xl mx-auto">
+            Real platforms, real users, real results — built end-to-end by
+            our team.
+          </p>
+        </div>
 
-                <div className="relative z-10 h-full flex flex-col justify-between p-6 text-white">
-                  <div className="flex justify-between">
-                    <div className="w-14 h-14 rounded-2xl bg-linear-to-r from-purple-600 to-blue-900 flex items-center justify-center text-xl shadow-lg">
-                      {item.icon}
+        {/* Product cards */}
+        <div className="flex flex-col gap-10">
+          {products.map((item, index) => {
+            const isLive = item.status === "Live Platform";
+            const imageOnLeft = index % 2 === 1;
+
+            return (
+              <div
+                key={item.title}
+                className="rounded-3xl border border-slate-200 shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white p-8 lg:p-10"
+              >
+                <div className="grid lg:grid-cols-2 gap-10 items-start">
+
+                  {/* Content */}
+                  <div className={imageOnLeft ? "lg:order-2" : ""}>
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-11 h-11 rounded-xl bg-blue-50 border border-blue-100 text-blue-600 flex items-center justify-center text-lg">
+                        {item.icon}
+                      </div>
+                      <span
+                        className={`inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide px-3 py-1.5 rounded-full ${
+                          isLive
+                            ? "text-blue-700 bg-blue-50 border border-blue-100"
+                            : "text-slate-500 bg-slate-100 border border-slate-200"
+                        }`}
+                      >
+                        <span
+                          className={`w-1.5 h-1.5 rounded-full ${
+                            isLive ? "bg-blue-600" : "bg-slate-400"
+                          }`}
+                        />
+                        {item.status}
+                      </span>
                     </div>
+
+                    <h3 className="text-3xl sm:text-4xl font-bold text-blue-950">
+                      {item.title}
+                    </h3>
+                    <p className="text-blue-600 font-semibold text-sm uppercase tracking-wide mt-2 mb-5">
+                      {item.tagline}
+                    </p>
+
+                    <p className="text-slate-500 leading-relaxed mb-7">
+                      {item.description}
+                    </p>
+
+                    {/* Stats */}
+                    <div className="grid grid-cols-3 gap-4 bg-slate-50 rounded-2xl p-5 mb-7 divide-x divide-slate-200">
+                      {item.stats.map((stat) => (
+                        <div key={stat.label} className="text-center px-1">
+                          <div className="text-blue-950 font-bold text-lg sm:text-xl">
+                            {stat.value}
+                          </div>
+                          <div className="text-slate-500 text-xs mt-1">
+                            {stat.label}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Features checklist */}
+                    <div className="grid grid-cols-2 gap-y-3 gap-x-4 mb-8">
+                      {item.features.map((feature) => (
+                        <div key={feature} className="flex items-center gap-2">
+                          <FaCheckCircle className="text-blue-600 shrink-0" size={15} />
+                          <span className="text-sm text-slate-700">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* CTA */}
+                    {isLive ? (
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3.5 rounded-xl font-semibold hover:bg-blue-700 transition"
+                      >
+                        {item.cta} <FaArrowRight size={14} />
+                      </a>
+                    ) : (
+                      <button
+                        disabled
+                        className="inline-flex items-center gap-2 bg-slate-100 text-slate-400 px-6 py-3.5 rounded-xl font-semibold cursor-not-allowed"
+                      >
+                        {item.cta} <FaArrowRight size={14} />
+                      </button>
+                    )}
                   </div>
 
-                  <div>
-                    <h3 className="text-3xl font-bold">{item.title}</h3>
-                    <p className="text-gray-200 mt-2">{item.subtitle}</p>
-
-                    
-                    <a  href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-6 flex items-center gap-2 mr-40 bg-white text-purple-700 px-5 py-3 rounded-xl font-semibold hover:bg-purple-600 hover:text-white transition"
-                    >
-                      Learn More <FaArrowRight />
-                    </a>
+                  {/* Visual */}
+                  <div className={imageOnLeft ? "lg:order-1" : ""}>
+                    {isLive ? (
+                      <div className="rounded-2xl border border-slate-200 shadow-md overflow-hidden h-fit">
+                        <img
+                          src={item.img}
+                          alt={item.title}
+                          className="w-full h-auto block"
+                        />
+                      </div>
+                    ) : (
+                      <div className="rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50 aspect-4/3 flex flex-col items-center justify-center text-center p-8">
+                        <div className="w-14 h-14 rounded-xl bg-blue-50 border border-blue-100 text-blue-600 flex items-center justify-center text-xl mb-4">
+                          {item.icon}
+                        </div>
+                        <h4 className="text-blue-950 font-bold">
+                          HRMS Automation Platform
+                        </h4>
+                        <p className="text-slate-500 text-sm mt-2 max-w-56">
+                          Private beta in progress. Stay tuned for the early
+                          launch invite.
+                        </p>
+                      </div>
+                    )}
                   </div>
+
                 </div>
               </div>
-            </FadeInSection>
-          ))}
+            );
+          })}
         </div>
+
       </div>
     </section>
   );

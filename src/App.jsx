@@ -10,7 +10,6 @@ import Services from "./pages/Services"
 import Portfolio from "./pages/Portfolio"
 import Contact from "./pages/Contact"
 import ScrollToTop from "./components/ScrollToTop"
-import CursorGlow from "./components/CursorGlow"
 
 
 const App = () => {
@@ -19,7 +18,7 @@ const App = () => {
 
   return (
     <div className="h-screen flex-1 pt-24">
-      <CursorGlow />
+      
       <Navbar />
        <ScrollToTop />
       <Routes location={location} key={location.pathname}>

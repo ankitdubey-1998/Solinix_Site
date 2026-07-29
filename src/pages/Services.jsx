@@ -6,7 +6,6 @@ import {
   FaBullhorn,
   FaCloud,
 } from "react-icons/fa";
-import FadeInSection from "../components/FadeInSection";
 
 const services = [
   {
@@ -49,63 +48,57 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
-        <FadeInSection>
-          <div className="text-center mb-14">
-            
+        <div className="text-center mb-14">
+          <span className="inline-block text-blue-950 font-semibold uppercase tracking-widest text-sm bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full mb-5">
+            Our Services
+          </span>
 
-            <h2 className="text-4xl font-bold text-slate-900 mt-2">
-               <span className="inline-block text-purple-700 font-semibold uppercase tracking-widest text-sm bg-purple-100 px-4 py-1.5 rounded-full mb-5">
-              Our Services
-            </span>
-            </h2>
-            <h2 className="text-4xl font-bold mt-2">
-              End-to-End Engineering. {" "}
-              <span className="bg-linear-to-r from-blue-900 to-purple-700 bg-clip-text text-transparent">
-                Zero Fluff.
-              </span>
-            </h2>
+          <h2 className="text-4xl font-bold text-blue-950 mt-2">
+            End-to-End Engineering.{" "}
+            <span className="text-blue-600">Zero Fluff.</span>
+          </h2>
 
-            <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
-              End-to-end solutions built to help your business win users and scale reliably.
-            </p>
-          </div>
-        </FadeInSection>
+          <div className="w-14 h-1 bg-blue-600 rounded-full mx-auto mt-6 mb-6" />
+
+          <p className="text-slate-500 max-w-2xl mx-auto">
+            End-to-end solutions built to help your business win users and
+            scale reliably.
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          {services.map((service, index) => (
-            <FadeInSection key={service.title} delay={index * 0.1}>
-              <div className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 min-h-105 flex flex-col justify-end">
-                {/* Background image */}
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 min-h-105 flex flex-col justify-end border border-slate-100"
+            >
+              {/* Background image */}
+              <img
+                src={service.image}
+                alt={service.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
 
-                {/* Dark gradient overlay for readability */}
-                <div className="absolute inset-0 bg-linear-to-t from-slate-900/65 via-slate-900/20 to-transparent transition-all duration-300 group-hover:from-slate-900/55 group-hover:via-slate-900/10" />
+              {/* Solid overlay for readability */}
+              <div className="absolute inset-0 bg-blue-950/80 transition-all duration-300 group-hover:bg-blue-950/85" />
 
-                {/* Icon badge */}
-                <div className="relative z-10 mx-6 mt-6 w-12 h-12 rounded-xl bg-linear-to-r from-purple-600 to-blue-900 text-white flex items-center justify-center text-xl shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-transform">
-                  {service.icon}
-                </div>
+              
 
-                {/* Content */}
-                <div className="relative z-10 p-6 pt-4">
-                  <h3 className="text-xl font-bold text-white">
-                    {service.title}
-                  </h3>
+              {/* Content */}
+              <div className="relative z-10 p-6 pt-4">
+                <h3 className="text-xl font-bold text-white">
+                  {service.title}
+                </h3>
 
-                  <p className="text-gray-300 text-sm mt-2 leading-relaxed">
-                    {service.desc}
-                  </p>
-                </div>
+                <p className="text-slate-200 text-sm mt-2 leading-relaxed">
+                  {service.desc}
+                </p>
               </div>
-            </FadeInSection>
+            </div>
           ))}
 
         </div>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/solinix_logo.png";
+import logo from "../assets/solinix_logo2.png";
 import { HiOutlineX } from "react-icons/hi";
 import { FiMenu } from "react-icons/fi";
 import Button from "../ui/Button";
