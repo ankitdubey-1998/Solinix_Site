@@ -24,7 +24,7 @@ const Hero = () => {
         </span>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-blue-950">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold leading-tight text-blue-950">
           We Don't Just Build Software.
           <br />
           <span className="text-blue-600">We Build Business Growth.</span>

@@ -62,7 +62,7 @@ const Portfolio = () => {
             Our Work
           </span>
 
-          <h2 className="text-4xl sm:text-5xl font-bold text-blue-950 leading-[1.1] tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-950 leading-[1.1] tracking-tight">
             Case Studies That{" "}
             <span className="text-blue-600">Speak for Themselves</span>
           </h2>

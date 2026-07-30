@@ -53,7 +53,7 @@ const Navbar = () => {
 
           <div className="ml-4">
             <Link to="/contact">
-    <Button title=" Free Consultation" />
+    <Button title="Let's Connect" />
   </Link>
           </div>
 
@@ -98,7 +98,7 @@ const Navbar = () => {
 
           <div className="pt-3 ">
                    <Link to="/contact">
-    <Button title="Get a Free Consultation" />
+    <Button title="Let's Connect" />
   </Link>
           </div>
 

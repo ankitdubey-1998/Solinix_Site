@@ -74,7 +74,7 @@ const Contact = () => {
             {/* Contact Info Card */}
             <div className="bg-white rounded-3xl shadow-lg p-8 border border-slate-100 hover:shadow-2xl transition duration-300">
 
-              <h3 className="text-2xl font-bold text-blue-950 mb-8">
+              <h3 className="text-xl font-bold text-blue-950 mb-8">
                 Contact Information
               </h3>
 
@@ -85,8 +85,8 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg text-slate-900">Our Office</h4>
-                  <p className="text-slate-500">
+                  <h4 className="font-semibold text-base text-slate-900">Our Office</h4>
+                  <p className="text-sm text-slate-500">
                     123 Tech Park, Innovation Valley, CA 94043
                   </p>
                 </div>
@@ -99,8 +99,8 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg text-slate-900">Email Us</h4>
-                  <a href="mailto:hello@solinix.com" className="text-slate-500 hover:text-blue-600 transition-colors">
+                  <h4 className="font-semibold text-base text-slate-900">Email Us</h4>
+                  <a href="mailto:hello@solinix.com" className="text-sm text-slate-500 hover:text-blue-600 transition-colors">
                     hello@solinix.com
                   </a>
                 </div>
@@ -113,8 +113,8 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg text-slate-900">Call Us</h4>
-                  <a href="tel:+15551234567" className="text-slate-500 hover:text-blue-600 transition-colors">
+                  <h4 className="font-semibold text-base text-slate-900">Call Us</h4>
+                  <a href="tel:+15551234567" className="text-sm text-slate-500 hover:text-blue-600 transition-colors">
                     +1 (555) 123-4567
                   </a>
                 </div>
@@ -127,8 +127,8 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg text-slate-900">Office Hours</h4>
-                  <p className="text-slate-500">
+                  <h4 className="font-semibold text-base text-slate-900">Office Hours</h4>
+                  <p className="text-sm text-slate-500">
                     Monday - Saturday
                     <br />
                     9:00 AM - 7:00 PM
@@ -137,8 +137,8 @@ const Contact = () => {
               </div>
 
               {/* CTA */}
-              <button className="w-full flex items-center justify-center gap-2 py-4 rounded-xl bg-blue-950 text-white font-semibold hover:bg-blue-900 hover:scale-[1.02] transition">
-                <FaCalendarAlt size={20} />
+              <button className="w-full flex items-center justify-center gap-2 py-4 rounded-xl bg-blue-950 text-white font-semibold text-sm hover:bg-blue-900 hover:scale-[1.02] transition">
+                <FaCalendarAlt size={18} />
                 Schedule a Meeting
               </button>
             </div>
@@ -147,7 +147,7 @@ const Contact = () => {
           {/* Right Card - Form */}
           <div className="bg-white rounded-3xl shadow-lg p-8 border border-slate-100 hover:shadow-2xl transition duration-300 h-fit">
 
-            <h3 className="text-2xl font-bold text-blue-950 mb-8">
+            <h3 className="text-xl font-bold text-blue-950 mb-8">
               Send us a Message
             </h3>
 
@@ -156,13 +156,13 @@ const Contact = () => {
                 <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mb-5">
                   <FaCheckCircle size={30} />
                 </div>
-                <h4 className="text-xl font-bold text-blue-950">Message Sent!</h4>
-                <p className="text-slate-500 mt-2 max-w-xs">
+                <h4 className="text-lg font-bold text-blue-950">Message Sent!</h4>
+                <p className="text-sm text-slate-500 mt-2 max-w-xs">
                   Thanks for reaching out — our team will get back to you within 24 hours.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="mt-6 text-blue-600 font-semibold hover:underline"
+                  className="mt-6 text-sm text-blue-600 font-semibold hover:underline"
                 >
                   Send another message
                 </button>
@@ -179,7 +179,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Your Name"
                     required
-                    className="w-full rounded-xl border border-slate-300 pl-12 pr-5 py-4 outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
+                    className="w-full rounded-xl border border-slate-300 pl-12 pr-5 py-4 text-sm outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
                   />
                 </div>
 
@@ -192,7 +192,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Your Email"
                     required
-                    className="w-full rounded-xl border border-slate-300 pl-12 pr-5 py-4 outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
+                    className="w-full rounded-xl border border-slate-300 pl-12 pr-5 py-4 text-sm outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
                   />
                 </div>
 
@@ -205,7 +205,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Subject"
                     required
-                    className="w-full rounded-xl border border-slate-300 pl-12 pr-5 py-4 outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
+                    className="w-full rounded-xl border border-slate-300 pl-12 pr-5 py-4 text-sm outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
                   />
                 </div>
 
@@ -216,15 +216,15 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Tell us about your project..."
                   required
-                  className="w-full rounded-xl border border-slate-300 px-5 py-4 outline-none resize-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
+                  className="w-full rounded-xl border border-slate-300 px-5 py-4 text-sm outline-none resize-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
                 ></textarea>
 
                 <button
                   type="submit"
-                  className="w-full flex justify-center items-center gap-2 py-4 rounded-xl bg-blue-950 text-white font-semibold hover:bg-blue-900 hover:scale-[1.02] transition"
+                  className="w-full flex justify-center items-center gap-2 py-4 rounded-xl bg-blue-950 text-white font-semibold text-sm hover:bg-blue-900 hover:scale-[1.02] transition"
                 >
                   Send Message
-                  <FaArrowRight size={20} />
+                  <FaArrowRight size={18} />
                 </button>
               </form>
             )}

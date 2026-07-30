@@ -141,7 +141,7 @@ export default function Products() {
                       </span>
                     </div>
 
-                    <h3 className="text-3xl sm:text-4xl font-bold text-blue-950">
+                    <h3 className="text-3xl sm:text-2xl font-bold text-blue-950">
                       {item.title}
                     </h3>
                     <p className="text-blue-600 font-semibold text-sm uppercase tracking-wide mt-2 mb-5">
