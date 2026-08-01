@@ -42,13 +42,15 @@ const features = [
   },
 ];
 
+
+
 const About = () => {
   return (
     <section id="about" className="relative py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
         {/* Top section: content + image */}
-        <div className="grid lg:grid-cols-2 gap-14 items-center mb-24">
+        <div className="grid lg:grid-cols-2 gap-14 items-center mb-20">
 
           {/* Left — text */}
           <div>
@@ -83,7 +85,7 @@ const About = () => {
 
             <Link
               to="/contact"
-              className="inline-block mt-8 px-7 py-3.5 rounded-xl bg-blue-950 text-white font-semibold hover:bg-blue-900 transition"
+              className="inline-block mt-8 px-7 py-3.5 rounded-xl bg-blue-950 text-white font-semibold hover:bg-blue-900"
             >
               Let's Talk About Your Project
             </Link>
@@ -110,6 +112,7 @@ const About = () => {
           </div>
         </div>
 
+
         {/* Mission & Vision */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="inline-block text-blue-950 font-semibold uppercase tracking-widest text-sm bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full mb-5">
@@ -124,7 +127,7 @@ const About = () => {
           <div className="w-14 h-1 bg-blue-600 rounded-full mx-auto mt-6" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-24">
+        <div className="grid md:grid-cols-2 gap-8 mb-20">
           {missionVision.map((item) => (
             <div
               key={item.title}
@@ -143,6 +146,27 @@ const About = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Corporate image banner */}
+        <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg mb-24">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1722945691720-7be9a171f3bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvcnBvcmF0ZSUyMGltYWdlJTIwYmFubmVyfGVufDB8fDB8fHww"
+            alt="Team collaborating in a modern office"
+            className="w-full h-72 md:h-96 object-cover"
+          />
+          <div className="absolute inset-0 bg-blue-950/40" />
+          <div className="absolute inset-0 flex items-center">
+            <div className="px-8 md:px-14 max-w-xl">
+              <p className="text-white text-2xl md:text-3xl font-bold leading-snug">
+                A team that treats your product like it's our own.
+              </p>
+              <p className="text-blue-100 text-sm md:text-base mt-4">
+                Every engagement is backed by a dedicated team that stays
+                invested in your product long after launch day.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Feature cards — simple, no image, no hover */}

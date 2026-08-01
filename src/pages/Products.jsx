@@ -5,6 +5,7 @@ import {
   FaArrowRight,
   FaCheckCircle,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import hrmsImg from "../assets/HRMS_app.png";
 
 const products = [
@@ -107,7 +108,7 @@ export default function Products() {
         </div>
 
         {/* Product cards */}
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 mb-20">
           {products.map((item, index) => {
             const isLive = item.status === "Live Platform";
             const imageOnLeft = index % 2 === 1;
@@ -199,11 +200,11 @@ export default function Products() {
                   {/* Visual */}
                   <div className={imageOnLeft ? "lg:order-1" : ""}>
                     {isLive ? (
-                      <div className="rounded-2xl border border-slate-200 shadow-md overflow-hidden h-fit">
+                      <div className="group rounded-2xl border border-slate-200 shadow-md overflow-hidden h-fit">
                         <img
                           src={item.img}
                           alt={item.title}
-                          className="w-full h-auto block"
+                          className="w-full h-auto block transition-transform duration-500 group-hover:scale-105"
                         />
                       </div>
                     ) : (
@@ -227,6 +228,9 @@ export default function Products() {
             );
           })}
         </div>
+
+       
+    
 
       </div>
     </section>

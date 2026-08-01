@@ -1,49 +1,7 @@
+import { Link } from "react-router-dom"
 import { FaArrowRight, FaRegCalendarAlt, FaRegClock } from "react-icons/fa";
+import posts from "../data/Post";
 
-const posts = [
-  {
-    title: "How AI is Reshaping Digital Product Development",
-    excerpt:
-      "From automated testing to smarter UX decisions, explore how AI tools are helping startups and enterprises ship better products, faster.",
-    date: "July 18, 2026",
-    readTime: "5 min read",
-  },
-  {
-    title: "5 Signs Your Startup Needs a Scalable Tech Stack",
-    excerpt:
-      "Scaling too fast without the right architecture can break your product. Here are the warning signs and how to fix them early.",
-    date: "July 10, 2026",
-    readTime: "4 min read",
-  },
-  {
-    title: "UI/UX Trends That Will Define 2026",
-    excerpt:
-      "Minimalism, motion design, and accessibility-first thinking are shaping how users experience digital products this year.",
-    date: "June 29, 2026",
-    readTime: "6 min read",
-  },
-  {
-    title: "Why Long-Term Partnerships Beat One-Off Projects",
-    excerpt:
-      "A look at how continuous collaboration between businesses and their tech partners drives better outcomes over time.",
-    date: "June 15, 2026",
-    readTime: "3 min read",
-  },
-  {
-    title: "Building Secure Web Apps: A Practical Checklist",
-    excerpt:
-      "Security shouldn't be an afterthought. Here's a practical checklist every team should run through before launch.",
-    date: "June 2, 2026",
-    readTime: "7 min read",
-  },
-  {
-    title: "From Idea to MVP: Our Proven Framework",
-    excerpt:
-      "How we help founders go from a rough concept to a working, testable product in weeks, not months.",
-    date: "May 20, 2026",
-    readTime: "5 min read",
-  },
-];
 
 const Blog = () => {
   return (
@@ -71,39 +29,62 @@ const Blog = () => {
 
         {/* Blog Grid */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {posts.map((post) => (
               <div
-                key={post.title}
-                className="bg-white rounded-2xl border border-slate-200 p-7 flex flex-col shadow-sm hover:shadow-lg transition-shadow duration-300"
+                key={post.slug}
+                className="group bg-white rounded-2xl border border-slate-200 flex flex-col shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden"
               >
-                {/* Meta */}
-                <div className="flex items-center gap-4 text-xs text-slate-500 mb-4">
-                  <span className="flex items-center gap-1.5">
-                    <FaRegCalendarAlt size={12} />
-                    {post.date}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <FaRegClock size={12} />
-                    {post.readTime}
-                  </span>
+                {/* Cover image */}
+                {post.image && (
+                  <div className="overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                )}
+
+                <div className="p-7 flex flex-col flex-1">
+                  {/* Meta */}
+                  <div className="flex items-center gap-4 text-xs text-slate-500 mb-4">
+                    <span className="flex items-center gap-1.5">
+                      <FaRegCalendarAlt size={12} />
+                      {post.date}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <FaRegClock size={12} />
+                      {post.readTime}
+                    </span>
+                  </div>
+
+                  {/* Content */}
+                  <h3 className="text-lg font-bold text-blue-950 mb-3 leading-snug">
+                    {post.title}
+                  </h3>
+
+                  <p className="text-sm text-slate-500 leading-relaxed mb-6">
+                    {post.excerpt}
+                  </p>
+
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="mt-auto flex items-center gap-2 text-blue-600 font-semibold text-sm hover:gap-3 transition-all duration-300"
+                  >
+                    Read More <FaArrowRight size={12} />
+                  </Link>
                 </div>
-
-                {/* Content */}
-                <h3 className="text-lg font-bold text-blue-950 mb-3 leading-snug">
-                  {post.title}
-                </h3>
-
-                <p className="text-sm text-slate-500 leading-relaxed mb-6">
-                  {post.excerpt}
-                </p>
-
-                <button className="mt-auto flex items-center gap-2 text-blue-600 font-semibold text-sm hover:gap-3 transition-all duration-300">
-                  Read More <FaArrowRight size={12} />
-                </button>
               </div>
             ))}
           </div>
+
+       
+          
+         
+
+        
+         
         </div>
       </div>
     </section>

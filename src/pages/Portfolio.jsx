@@ -1,3 +1,4 @@
+
 const projects = [
   {
     category: "PropTech",
@@ -10,6 +11,8 @@ const projects = [
       { value: "3x", label: "Faster Search" },
     ],
     tags: ["React", "Node.js", "MongoDB", "AWS"],
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=80",
   },
   {
     category: "PropTech SaaS",
@@ -22,6 +25,8 @@ const projects = [
       { value: "2.5x", label: "Faster Onboarding" },
     ],
     tags: ["React", "Express", "PostgreSQL", "Razorpay"],
+    image:
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
   },
   {
     category: "Enterprise SaaS",
@@ -34,6 +39,8 @@ const projects = [
       { value: "Auto", label: "Payroll" },
     ],
     tags: ["React", "NestJS", "MySQL", "Docker"],
+    image:
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&auto=format&fit=crop&q=80",
   },
   {
     category: "E-Commerce",
@@ -46,6 +53,8 @@ const projects = [
       { value: "50K", label: "SKU Catalog" },
     ],
     tags: ["Next.js", "Shopify", "Redis", "Cloudflare"],
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=80",
   },
 ]
 
@@ -76,53 +85,70 @@ const Portfolio = () => {
         </div>
 
         {/* Project cards */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-20">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300 p-7"
+              className="group rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden"
             >
-              <span className="inline-block bg-blue-50 text-blue-950 text-[11px] font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full mb-4">
-                {project.category}
-              </span>
-
-              <h3 className="text-lg font-bold text-blue-950 mb-2">
-                {project.title}
-              </h3>
-              <p className="text-sm text-slate-500 leading-relaxed mb-5">
-                {project.description}
-              </p>
-
-              {/* Stats strip — signature element */}
-              <div className="grid grid-cols-3 gap-2 rounded-xl bg-blue-950 py-3.5 mb-5">
-                {project.stats.map((stat) => (
-                  <div key={stat.label} className="text-center px-1">
-                    <div className="text-white font-bold text-sm sm:text-base">
-                      {stat.value}
-                    </div>
-                    <div className="text-blue-300 text-[10px] uppercase tracking-wide mt-0.5">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
+              {/* Preview image */}
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
               </div>
 
-              {/* Tags */}
-              {project.tags && (
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs font-medium text-blue-950 border border-slate-200 bg-slate-50 px-2.5 py-1 rounded-full"
-                    >
-                      {tag}
-                    </span>
+              <div className="p-7">
+                <span className="inline-block bg-blue-50 text-blue-950 text-[11px] font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full mb-4">
+                  {project.category}
+                </span>
+
+                <h3 className="text-lg font-bold text-blue-950 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-sm text-slate-500 leading-relaxed mb-5">
+                  {project.description}
+                </p>
+
+                {/* Stats strip — signature element */}
+                <div className="grid grid-cols-3 gap-2 rounded-xl bg-blue-950 py-3.5 mb-5">
+                  {project.stats.map((stat) => (
+                    <div key={stat.label} className="text-center px-1">
+                      <div className="text-white font-bold text-sm sm:text-base">
+                        {stat.value}
+                      </div>
+                      <div className="text-blue-300 text-[10px] uppercase tracking-wide mt-0.5">
+                        {stat.label}
+                      </div>
+                    </div>
                   ))}
                 </div>
-              )}
+
+                {/* Tags */}
+                {project.tags && (
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs font-medium text-blue-950 border border-slate-200 bg-slate-50 px-2.5 py-1 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           ))}
         </div>
+
+     
+
+      
+          
+       
       </div>
     </section>
   )

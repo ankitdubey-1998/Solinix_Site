@@ -18,6 +18,13 @@ const Footer = () => {
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
+
+  const legalLinks = [
+    { name: "Privacy", path: "/privacy" },
+    { name: "Terms", path: "/terms" },
+    { name: "Cookies", path: "/cookies" },
+  ];
+
   return (
     <footer className="relative overflow-hidden bg-linear-to-br from-slate-950 via-[#0f1729] to-blue-950 text-gray-300 pt-16">
 
@@ -90,9 +97,11 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white">Privacy</a>
-            <a href="#" className="hover:text-white">Terms</a>
-            <a href="#" className="hover:text-white">Cookies</a>
+            {legalLinks.map((link) => (
+              <Link key={link.name} to={link.path} className="hover:text-white">
+                {link.name}
+              </Link>
+            ))}
           </div>
         </div>
 

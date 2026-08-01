@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   FaCode,
   FaGlobe,
@@ -69,7 +70,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
 
           {services.map((service) => (
             <div
@@ -102,6 +103,49 @@ const Services = () => {
           ))}
 
         </div>
+
+        {/* Corporate image banner */}
+        <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg mb-20">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1725408023469-d0659e7f3545?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29ycG9yYXRlJTIwaW1hZ2UlMjBiYW5uZXJ8ZW58MHx8MHx8fDA%3D"
+            alt="Team planning a project together"
+            className="w-full h-72 md:h-96 object-cover"
+          />
+          <div className="absolute inset-0 bg-blue-950/45" />
+          <div className="absolute inset-0 flex items-center">
+            <div className="px-8 md:px-14 max-w-xl">
+              <p className="text-white text-2xl md:text-3xl font-bold leading-snug">
+                One team, every service you need to ship.
+              </p>
+              <p className="text-blue-100 text-sm md:text-base mt-4">
+                From the first line of code to ongoing maintenance, our
+                specialists work as a single team so nothing falls through
+                the cracks between disciplines.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* CTA strip */}
+        <div className="rounded-2xl border border-slate-200 bg-blue-50/60 px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 className="text-xl md:text-2xl font-bold text-blue-950">
+              Not sure which service fits your project?
+            </h3>
+            <p className="text-slate-600 text-sm mt-2">
+              Tell us what you're building — we'll map out the right mix of
+              services for you.
+            </p>
+          </div>
+
+          <Link
+            to="/contact"
+            className="shrink-0 px-7 py-3.5 rounded-xl bg-blue-950 text-white font-semibold hover:bg-blue-900"
+          >
+            Let's Talk About Your Project
+          </Link>
+        </div>
+
       </div>
     </section>
   );
