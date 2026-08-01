@@ -83,7 +83,7 @@ const Footer = () => {
 
             <h3 className="text-xl font-semibold text-white mb-6 relative inline-block">
               Contact
-              <span className="absolute left-0 -bottom-2 w-14 h-1 rounded-full bg-linear-to-r from-cyan-400 to-blue-600"></span>
+             
             </h3>
 
             <div className="space-y-4 text-slate-400">
