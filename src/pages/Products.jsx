@@ -5,7 +5,6 @@ import {
   FaArrowRight,
   FaCheckCircle,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import hrmsImg from "../assets/HRMS_app.png";
 
 const products = [
