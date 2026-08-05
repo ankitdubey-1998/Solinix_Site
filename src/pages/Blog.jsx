@@ -5,7 +5,18 @@ import posts from "../data/Post";
 
 const Blog = () => {
   return (
-    <section className="relative py-20 bg-white">
+    <section className="relative py-20">
+      {/* Natural background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600&auto=format&fit=crop&q=80')",
+        }}
+      />
+      {/* Light overlay for readability */}
+      <div className="absolute inset-0 bg-white/90" />
+      
       <div className="px-4 relative z-10">
 
         {/* Header */}

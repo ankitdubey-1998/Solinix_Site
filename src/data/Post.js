@@ -7,7 +7,7 @@ const posts = [
     date: "July 18, 2026",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop&q=80",
     content: [
       "AI is no longer a bolt-on feature — it's becoming part of how digital products get built, tested, and refined at every stage. Teams that once relied purely on manual QA cycles are now using AI-driven testing tools that catch regressions before they reach production.",
       "Beyond testing, AI is reshaping how design decisions get made. Instead of relying only on intuition or slow A/B tests, product teams are using AI models to simulate user behavior, predict friction points, and prioritize which features to build next.",
@@ -24,7 +24,7 @@ const posts = [
     date: "July 10, 2026",
     readTime: "4 min read",
     image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format&fit=crop&q=80",
     content: [
       "Every startup eventually hits a wall where the systems that got them to launch start working against them. The tricky part is that these warning signs are often subtle until they aren't.",
       "The first sign is slow deploys. If shipping a small fix takes hours instead of minutes, your pipeline is holding the product hostage.",
@@ -42,7 +42,7 @@ const posts = [
     date: "June 29, 2026",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1545235617-7a424c1a60cc?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=80",
     content: [
       "Design trends move fast, but 2026 is shaping up to be less about flashy visuals and more about restraint, clarity, and inclusivity.",
       "Minimalism is back, but it's a more confident minimalism — fewer decorative elements, but bolder typography and more intentional whitespace that guides the eye rather than just clearing clutter.",
@@ -59,7 +59,7 @@ const posts = [
     date: "June 15, 2026",
     readTime: "3 min read",
     image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop&q=80",
     content: [
       "One-off projects can solve an immediate problem, but they rarely build lasting value. A team that only shows up for a single sprint never gets the chance to understand the business behind the product.",
       "Long-term partnerships work differently. The tech partner learns the product's history, the reasoning behind past decisions, and the constraints that shaped the current architecture — context that makes every future decision faster and better informed.",
@@ -93,7 +93,7 @@ const posts = [
     date: "May 20, 2026",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80",
     content: [
       "Founders often come to us with a strong idea but no clear path to a testable product. Our framework is built to close that gap fast, without cutting corners that come back to bite later.",
       "We start with a scoping sprint — a short, focused session to define the single core problem the MVP needs to solve, and to explicitly cut everything that isn't essential to proving it.",

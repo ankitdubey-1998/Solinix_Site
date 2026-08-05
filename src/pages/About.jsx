@@ -46,7 +46,18 @@ const features = [
 
 const About = () => {
   return (
-    <section id="about" className="relative py-20 bg-white">
+    <section id="about" className="relative py-20">
+      {/* Natural background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1600&auto=format&fit=crop&q=80')",
+        }}
+      />
+      {/* Light overlay for readability */}
+      <div className="absolute inset-0 bg-white/90" />
+      
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
         {/* Top section: content + image */}
@@ -151,7 +162,7 @@ const About = () => {
         {/* Corporate image banner */}
         <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg mb-24">
           <img
-            src="https://plus.unsplash.com/premium_photo-1722945691720-7be9a171f3bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNvcnBvcmF0ZSUyMGltYWdlJTIwYmFubmVyfGVufDB8fDB8fHww"
+            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop&q=80"
             alt="Team collaborating in a modern office"
             className="w-full h-72 md:h-96 object-cover"
           />

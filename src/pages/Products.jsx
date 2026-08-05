@@ -84,7 +84,18 @@ const products = [
 
 export default function Products() {
   return (
-    <section className="relative py-20 bg-white">
+    <section className="relative py-20">
+      {/* Natural background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&auto=format&fit=crop&q=80')",
+        }}
+      />
+      {/* Light overlay for readability */}
+      <div className="absolute inset-0 bg-white/90" />
+      
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
         {/* Header */}

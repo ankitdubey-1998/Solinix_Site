@@ -26,7 +26,7 @@ const projects = [
     ],
     tags: ["React", "Express", "PostgreSQL", "Razorpay"],
     image:
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=80",
   },
   {
     category: "Enterprise SaaS",
@@ -40,7 +40,7 @@ const projects = [
     ],
     tags: ["React", "NestJS", "MySQL", "Docker"],
     image:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
   },
   {
     category: "E-Commerce",
@@ -54,7 +54,7 @@ const projects = [
     ],
     tags: ["Next.js", "Shopify", "Redis", "Cloudflare"],
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop&q=80",
   },
 ]
 
@@ -62,8 +62,19 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      className="relative px-4 sm:px-12 lg:px-24 xl:px-40 py-24 bg-white"
+      className="relative px-4 sm:px-12 lg:px-24 xl:px-40 py-24"
     >
+      {/* Natural background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&auto=format&fit=crop&q=80')",
+        }}
+      />
+      {/* Light overlay for readability */}
+      <div className="absolute inset-0 bg-white/90" />
+      
       <div className="relative z-10 max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

@@ -28,7 +28,18 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative py-20 bg-white">
+    <section className="relative py-20">
+      {/* Natural background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&auto=format&fit=crop&q=80')",
+        }}
+      />
+      {/* Light overlay for readability */}
+      <div className="absolute inset-0 bg-white/90" />
+      
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
         {/* Heading */}
@@ -59,7 +70,7 @@ const Contact = () => {
             {/* Attractive image banner */}
             <div className="relative h-64 rounded-3xl overflow-hidden shadow-lg border border-slate-100">
               <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&auto=format&fit=crop&q=60"
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&auto=format&fit=crop&q=80"
                 alt="Our team at work"
                 className="absolute inset-0 w-full h-full object-cover"
               />

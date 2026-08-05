@@ -4,17 +4,17 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center -mt-6 justify-center overflow-hidden">
 
-      {/* Background image — bright, whitish */}
+      {/* Background image — stunning natural landscape */}
       <div
         className="absolute inset-0 bg-cover bg-center animate-[kenburns_20s_ease-in-out_infinite]"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&auto=format&fit=crop&q=80')",
+            "url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1600&auto=format&fit=crop&q=80')",
         }}
       />
 
-      {/* Solid white wash for readability — no gradient */}
-      <div className="absolute inset-0 bg-white/80" />
+      {/* Subtle overlay for readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/60 to-white/80" />
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
