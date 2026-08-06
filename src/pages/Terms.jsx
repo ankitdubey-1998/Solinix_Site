@@ -1,117 +1,85 @@
 const Terms = () => {
   return (
-    <section className="relative py-20">
-      {/* Natural background image */}
+    <section className="relative py-8 lg:py-16 bg-slate-50 overflow-hidden">
+      {/* Background layer */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-fixed bg-center opacity-[0.03]"
         style={{
-          backgroundImage:
-            "url('/office-workspace.png')",
+          backgroundImage: "url('/hero_modern_office.png')",
         }}
       />
-      {/* Light overlay for readability */}
-      <div className="absolute inset-0 bg-white/90" />
       
-      <div className="px-4 relative z-10 max-w-3xl mx-auto">
-        <span className="inline-block text-blue-950 font-semibold uppercase tracking-widest text-sm bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full mb-5">
-          Legal
-        </span>
+      <div className="px-6 relative z-10 max-w-3xl mx-auto">
+        <div className="text-center mb-16">
+          <span className="inline-block px-5 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 font-bold uppercase tracking-widest text-xs mb-6 shadow-sm">
+            Legal
+          </span>
 
-        <h1 className="text-3xl md:text-4xl font-bold text-blue-950 mb-4">
-          Terms of Service
-        </h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
+            Terms of Service
+          </h1>
 
-        <p className="text-sm text-slate-500 mb-10">
-          Last updated: August 1, 2026
-        </p>
+          <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">
+            Last updated: August 1, 2026
+          </p>
+        </div>
 
-        <div className="space-y-8">
-          <div>
-            <h2 className="text-xl font-bold text-blue-950 mb-3">
-              1. Acceptance of Terms
-            </h2>
-            <p className="text-base text-slate-600 leading-relaxed">
-              By accessing or using the Solinix Software Solutions website,
-              you agree to be bound by these Terms of Service. If you do not
-              agree with any part of these terms, please do not use our
-              website or services.
-            </p>
-          </div>
+        <div className="bg-white rounded-[2rem] shadow-xl border border-slate-200/60 p-8 md:p-12 prose prose-slate prose-lg max-w-none prose-headings:text-slate-900 prose-headings:font-bold prose-headings:tracking-tight prose-a:text-indigo-600">
+          
+          <h2>1. Acceptance of Terms</h2>
+          <p>
+            By accessing or using our website and services, you agree to
+            be bound by these Terms of Service. If you do not agree,
+            please do not use our services.
+          </p>
 
-          <div>
-            <h2 className="text-xl font-bold text-blue-950 mb-3">
-              2. Use of Our Services
-            </h2>
-            <p className="text-base text-slate-600 leading-relaxed">
-              Our website and services are provided for informational and
-              business purposes. You agree not to misuse our services,
-              attempt unauthorized access to our systems, or use our content
-              in a way that violates applicable laws.
-            </p>
-          </div>
+          <h2>2. Services Provided</h2>
+          <p>
+            We provide software development, design, and digital marketing
+            services as outlined in specific project agreements. The
+            content on this website is for informational purposes only.
+          </p>
 
-          <div>
-            <h2 className="text-xl font-bold text-blue-950 mb-3">
-              3. Intellectual Property
-            </h2>
-            <p className="text-base text-slate-600 leading-relaxed">
-              All content on this website, including text, graphics, logos,
-              and design elements, is the property of Solinix Software
-              Solutions unless otherwise stated, and may not be reproduced
-              without permission.
-            </p>
-          </div>
+          <h2>3. Intellectual Property</h2>
+          <p>
+            All original content, designs, and code displayed on this
+            website are the intellectual property of our company unless
+            otherwise stated. You may not reuse, republish, or distribute
+            our materials without explicit permission.
+          </p>
 
-          <div>
-            <h2 className="text-xl font-bold text-blue-950 mb-3">
-              4. Service Availability
-            </h2>
-            <p className="text-base text-slate-600 leading-relaxed">
-              We aim to keep our website and services available at all
-              times, but we do not guarantee uninterrupted access. We may
-              update, modify, or discontinue parts of our services without
-              prior notice.
-            </p>
-          </div>
+          <h2>4. Limitation of Liability</h2>
+          <p>
+            While we strive for excellence, we cannot guarantee that our
+            website or services will be completely error-free or
+            uninterrupted. We are not liable for any indirect, incidental,
+            or consequential damages arising from your use of our website.
+          </p>
 
-          <div>
-            <h2 className="text-xl font-bold text-blue-950 mb-3">
-              5. Limitation of Liability
-            </h2>
-            <p className="text-base text-slate-600 leading-relaxed">
-              Solinix Software Solutions is not liable for any indirect,
-              incidental, or consequential damages arising from your use of
-              our website or services, to the fullest extent permitted by
-              law.
-            </p>
-          </div>
+          <h2>5. Third-Party Links</h2>
+          <p>
+            Our website may contain links to third-party websites. We are
+            not responsible for the content, privacy policies, or
+            practices of these external sites.
+          </p>
 
-          <div>
-            <h2 className="text-xl font-bold text-blue-950 mb-3">
-              6. Changes to These Terms
-            </h2>
-            <p className="text-base text-slate-600 leading-relaxed">
-              We may revise these Terms of Service from time to time.
-              Continued use of our website after changes are posted
-              constitutes acceptance of the updated terms.
-            </p>
-          </div>
+          <h2>6. Governing Law</h2>
+          <p>
+            These terms are governed by the laws of the jurisdiction in
+            which we operate. Any disputes arising from these terms will
+            be resolved in the appropriate local courts.
+          </p>
 
-          <div>
-            <h2 className="text-xl font-bold text-blue-950 mb-3">
-              7. Contact Us
-            </h2>
-            <p className="text-base text-slate-600 leading-relaxed">
-              If you have questions about these terms, reach out to us at{" "}
-              <a
-                href="mailto:hello@solinix.com"
-                className="text-blue-600 font-semibold"
-              >
-                hello@solinix.com
-              </a>
-              .
-            </p>
-          </div>
+          <h2>7. Contact Information</h2>
+          <p>
+            If you have any questions about these Terms, please contact us
+            at{" "}
+            <a href="mailto:hello@solinix.com">
+              hello@solinix.com
+            </a>
+            .
+          </p>
+          
         </div>
       </div>
     </section>

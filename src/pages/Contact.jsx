@@ -22,167 +22,150 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Hook this up to your backend/EmailJS later
     setSubmitted(true);
     setForm({ name: "", email: "", subject: "", message: "" });
   };
 
   return (
-    <section className="relative py-20">
-      {/* Natural background image */}
+    <section className="relative py-8 lg:py-16 bg-slate-50 overflow-hidden">
+      {/* Premium background layer */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-fixed bg-center opacity-[0.05]"
         style={{
-          backgroundImage:
-            "url('/office-workspace.png')",
+          backgroundImage: "url('/hero_modern_office.png')",
         }}
       />
-      {/* Light overlay for readability */}
-      <div className="absolute inset-0 bg-white/90" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
 
         {/* Heading */}
-        <div className="text-center mb-16">
-          <span className="inline-block text-blue-950 font-semibold uppercase tracking-widest text-sm bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full mb-5">
+        <div className="text-center mb-20">
+          <span className="inline-block px-5 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 font-bold uppercase tracking-widest text-xs mb-6 shadow-sm animate-fade-in-up">
             Contact Us
           </span>
 
-          <h2 className="text-2xl md:text-4xl font-bold text-blue-950 mt-3">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
             Let's Start Your Next{" "}
-            <span className="text-blue-600">Breakthrough</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">
+              Breakthrough
+            </span>
           </h2>
 
-          <div className="w-14 h-1 bg-blue-600 rounded-full mx-auto mt-6 mb-6" />
+          <div className="w-20 h-1.5 bg-gradient-to-r from-indigo-600 to-blue-500 rounded-full mx-auto mt-8 mb-8" />
 
-          <p className="text-slate-500 max-w-2xl mx-auto text-lg">
-            Have an idea or need a digital solution? We'd love to hear from
-            you. Fill out the form and our team will get back to you shortly.
+          <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed font-medium">
+            Have an idea or need an enterprise digital solution? Fill out the form and our senior team will get back to you within hours.
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
 
           {/* Left Column */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-10">
 
             {/* Attractive image banner */}
-            <div className="relative h-64 rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+            <div className="relative h-72 rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-200/50 group">
               <img
-                src="/office-team.png"
+                src="/hero_modern_office.png"
                 alt="Our customer support team"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-blue-950/90 px-6 py-4 flex items-center gap-3">
-                <BsClockFill className="text-blue-300 shrink-0" size={20} />
-                <p className="text-white text-sm font-medium">
-                  We usually reply within 24 hours — Mon to Sat
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 px-8 py-6 flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-indigo-500/30 backdrop-blur-md border border-indigo-400/30 flex items-center justify-center">
+                  <BsClockFill className="text-indigo-100" size={18} />
+                </div>
+                <p className="text-white text-sm md:text-base font-medium">
+                  We usually reply within 12 hours — Mon to Sat
                 </p>
               </div>
             </div>
 
             {/* Contact Info Card */}
-            <div className="bg-white rounded-3xl shadow-lg p-8 border border-slate-100 hover:shadow-2xl transition duration-300">
+            <div className="bg-white rounded-[2.5rem] shadow-xl p-10 lg:p-12 border border-slate-200 hover:shadow-2xl transition duration-500">
 
-              <h3 className="text-xl font-bold text-blue-950 mb-8">
+              <h3 className="text-2xl font-bold text-slate-900 mb-10 tracking-tight">
                 Contact Information
               </h3>
 
               {/* Office */}
-              <div className="flex gap-5 mb-8 group">
-                <div className="w-14 h-14 shrink-0 rounded-full bg-blue-950 text-white flex items-center justify-center group-hover:scale-110 transition">
+              <div className="flex gap-6 mb-10 group cursor-default">
+                <div className="w-16 h-16 shrink-0 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm border border-indigo-100">
                   <FaMapMarkerAlt size={24} />
                 </div>
-
                 <div>
-                  <h4 className="font-semibold text-base text-slate-900">Our Office</h4>
-                  <p className="text-sm text-slate-500">
+                  <h4 className="font-bold text-lg text-slate-900">Our Office</h4>
+                  <p className="text-sm font-medium text-slate-600 leading-relaxed mt-1">
                     123 Tech Park, Innovation Valley, CA 94043
                   </p>
                 </div>
               </div>
 
               {/* Email */}
-              <div className="flex gap-5 mb-8 group">
-                <div className="w-14 h-14 shrink-0 rounded-full bg-blue-950 text-white flex items-center justify-center group-hover:scale-110 transition">
-                  <MdEmail size={22} />
+              <div className="flex gap-6 mb-10 group">
+                <div className="w-16 h-16 shrink-0 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm border border-indigo-100">
+                  <MdEmail size={26} />
                 </div>
-
                 <div>
-                  <h4 className="font-semibold text-base text-slate-900">Email Us</h4>
-                  <a href="mailto:hello@solinix.com" className="text-sm text-slate-500 hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg text-slate-900">Email Us</h4>
+                  <a href="mailto:hello@solinix.com" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors mt-1 block">
                     hello@solinix.com
                   </a>
                 </div>
               </div>
 
               {/* Phone */}
-              <div className="flex gap-5 mb-8 group">
-                <div className="w-14 h-14 shrink-0 rounded-full bg-blue-950 text-white flex items-center justify-center group-hover:scale-110 transition">
+              <div className="flex gap-6 mb-10 group">
+                <div className="w-16 h-16 shrink-0 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-sm border border-indigo-100">
                   <FaPhoneAlt size={22} />
                 </div>
-
                 <div>
-                  <h4 className="font-semibold text-base text-slate-900">Call Us</h4>
-                  <a href="tel:+15551234567" className="text-sm text-slate-500 hover:text-blue-600 transition-colors">
+                  <h4 className="font-bold text-lg text-slate-900">Call Us</h4>
+                  <a href="tel:+15551234567" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors mt-1 block">
                     +1 (555) 123-4567
                   </a>
                 </div>
               </div>
 
-              {/* Office Hours */}
-              <div className="flex gap-5 mb-10 group">
-                <div className="w-14 h-14 shrink-0 rounded-full bg-blue-950 text-white flex items-center justify-center group-hover:scale-110 transition">
-                  <BsClockFill size={22} />
-                </div>
-
-                <div>
-                  <h4 className="font-semibold text-base text-slate-900">Office Hours</h4>
-                  <p className="text-sm text-slate-500">
-                    Monday - Saturday
-                    <br />
-                    9:00 AM - 7:00 PM
-                  </p>
-                </div>
-              </div>
-
               {/* CTA */}
-              <button className="w-full flex items-center justify-center gap-2 py-4 rounded-xl bg-blue-950 text-white font-semibold text-sm hover:bg-blue-900 hover:scale-[1.02] transition">
-                <FaCalendarAlt size={18} />
+              <button className="w-full flex items-center justify-center gap-3 py-4 rounded-full bg-slate-900 text-white font-bold text-sm hover:bg-indigo-600 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 mt-6">
+                <FaCalendarAlt size={16} />
                 Schedule a Meeting
               </button>
             </div>
           </div>
 
           {/* Right Card - Form */}
-          <div className="bg-white rounded-3xl shadow-lg p-8 border border-slate-100 hover:shadow-2xl transition duration-300 h-fit">
+          <div className="bg-white rounded-[2.5rem] shadow-xl p-10 lg:p-12 border border-slate-200 hover:shadow-2xl transition duration-500 h-fit">
 
-            <h3 className="text-xl font-bold text-blue-950 mb-8">
+            <h3 className="text-2xl font-bold text-slate-900 mb-10 tracking-tight">
               Send us a Message
             </h3>
 
             {submitted ? (
-              <div className="flex flex-col items-center justify-center text-center py-16">
-                <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mb-5">
-                  <FaCheckCircle size={30} />
+              <div className="flex flex-col items-center justify-center text-center py-20">
+                <div className="w-20 h-20 rounded-full bg-emerald-50 text-emerald-500 flex items-center justify-center mb-6 shadow-inner border border-emerald-100">
+                  <FaCheckCircle size={40} />
                 </div>
-                <h4 className="text-lg font-bold text-blue-950">Message Sent!</h4>
-                <p className="text-sm text-slate-500 mt-2 max-w-xs">
-                  Thanks for reaching out — our team will get back to you within 24 hours.
+                <h4 className="text-2xl font-bold text-slate-900">Message Sent!</h4>
+                <p className="text-slate-600 mt-4 max-w-sm font-medium leading-relaxed">
+                  Thanks for reaching out! Our team has received your message and will get back to you shortly.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="mt-6 text-sm text-blue-600 font-semibold hover:underline"
+                  className="mt-8 text-sm text-indigo-600 font-bold hover:text-indigo-800 transition-colors"
                 >
                   Send another message
                 </button>
               </div>
             ) : (
-              <form className="space-y-5" onSubmit={handleSubmit}>
+              <form className="space-y-6" onSubmit={handleSubmit}>
 
                 <div className="relative">
-                  <FaUser className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400" size={16} />
+                  <div className="absolute left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center">
+                    <FaUser className="text-slate-400" size={14} />
+                  </div>
                   <input
                     type="text"
                     name="name"
@@ -190,12 +173,14 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Your Name"
                     required
-                    className="w-full rounded-xl border border-slate-300 pl-12 pr-5 py-4 text-sm outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
+                    className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 pl-20 pr-6 py-5 text-sm font-medium text-slate-900 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all placeholder:text-slate-400"
                   />
                 </div>
 
                 <div className="relative">
-                  <MdEmail className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
+                  <div className="absolute left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center">
+                    <MdEmail className="text-slate-400" size={16} />
+                  </div>
                   <input
                     type="email"
                     name="email"
@@ -203,12 +188,14 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Your Email"
                     required
-                    className="w-full rounded-xl border border-slate-300 pl-12 pr-5 py-4 text-sm outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
+                    className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 pl-20 pr-6 py-5 text-sm font-medium text-slate-900 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all placeholder:text-slate-400"
                   />
                 </div>
 
                 <div className="relative">
-                  <FaTag className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400" size={15} />
+                  <div className="absolute left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center">
+                    <FaTag className="text-slate-400" size={14} />
+                  </div>
                   <input
                     type="text"
                     name="subject"
@@ -216,7 +203,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Subject"
                     required
-                    className="w-full rounded-xl border border-slate-300 pl-12 pr-5 py-4 text-sm outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
+                    className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 pl-20 pr-6 py-5 text-sm font-medium text-slate-900 outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all placeholder:text-slate-400"
                   />
                 </div>
 
@@ -227,15 +214,15 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Tell us about your project..."
                   required
-                  className="w-full rounded-xl border border-slate-300 px-5 py-4 text-sm outline-none resize-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition"
+                  className="w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-6 py-5 text-sm font-medium text-slate-900 outline-none resize-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition-all placeholder:text-slate-400"
                 ></textarea>
 
                 <button
                   type="submit"
-                  className="w-full flex justify-center items-center gap-2 py-4 rounded-xl bg-blue-950 text-white font-semibold text-sm hover:bg-blue-900 hover:scale-[1.02] transition"
+                  className="w-full flex justify-center items-center gap-3 py-5 rounded-2xl bg-indigo-600 text-white font-bold text-sm shadow-xl shadow-indigo-600/30 hover:bg-indigo-700 hover:-translate-y-1 transition-all duration-300 mt-4"
                 >
                   Send Message
-                  <FaArrowRight size={18} />
+                  <FaArrowRight size={16} />
                 </button>
               </form>
             )}

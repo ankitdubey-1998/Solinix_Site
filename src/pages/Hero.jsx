@@ -2,55 +2,57 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center -mt-6 justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center -mt-6 justify-center overflow-hidden bg-slate-50">
 
-      {/* Background image — stunning natural landscape */}
+      {/* Stunning high-fidelity background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center animate-[kenburns_20s_ease-in-out_infinite]"
+        className="absolute inset-0 bg-cover bg-center animate-[kenburns_30s_ease-in-out_infinite]"
         style={{
-          backgroundImage:
-            "url('/office-hero.png')",
+          backgroundImage: "url('/hero_modern_office.png')",
         }}
       />
 
-      {/* Subtle overlay for readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/60 to-white/80" />
+      {/* Premium glassmorphism gradient overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/70 to-white/90 backdrop-blur-[2px]" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      {/* Content Container */}
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center mt-10">
 
-        <span className="inline-block text-blue-950 font-semibold uppercase tracking-widest text-sm bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full mb-8">
-          Digital Product Studio
+        {/* Elegant Badge */}
+        <span className="inline-block px-5 py-2 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 font-semibold text-sm tracking-widest uppercase mb-8 shadow-sm animate-fade-in-up">
+          Enterprise Grade Solutions
         </span>
 
-        {/* Heading */}
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold leading-tight text-blue-950">
+        {/* Stunning Gradient Heading */}
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-slate-900 tracking-tight animate-fade-in-up delay-100">
           We Don't Just Build Software.
           <br />
-          <span className="text-blue-600">We Build Business Growth.</span>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-blue-500">
+            We Build Business Growth.
+          </span>
         </h1>
 
-        {/* Description */}
-        <p className="mt-8 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-8">
-          We build innovative software, websites and mobile applications —
-          and back them with digital marketing that gets real results.
+        {/* Professional Subtext */}
+        <p className="mt-8 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed animate-fade-in-up delay-200 font-medium">
+          Accelerate your digital transformation with our world-class engineering, stunning design, and scalable architecture.
         </p>
 
-        {/* Buttons */}
-        <div className="mt-10 flex flex-wrap justify-center gap-5">
+        {/* Elevated Call to Actions */}
+        <div className="mt-12 flex flex-wrap justify-center gap-6 animate-fade-in-up delay-300">
 
           <Link
             to="/services"
-            className="px-8 py-3 rounded-xl bg-blue-950 text-white font-semibold shadow-lg hover:bg-blue-900 hover:scale-105 transition duration-300"
+            className="px-8 py-4 rounded-full bg-indigo-600 text-white font-bold shadow-xl shadow-indigo-600/30 hover:bg-indigo-700 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 flex items-center gap-2"
           >
-            Explore Services
+            Explore Our Services
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
           </Link>
 
           <Link
             to="/products"
-            className="px-8 py-3 rounded-xl bg-white text-blue-950 font-semibold border-2 border-blue-950 hover:bg-blue-50 hover:scale-105 transition duration-300"
+            className="px-8 py-4 rounded-full bg-white text-slate-900 font-bold shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200"
           >
-            Our Products
+            View Products
           </Link>
 
         </div>

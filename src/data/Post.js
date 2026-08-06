@@ -6,7 +6,7 @@ const posts = [
       "From automated testing to smarter UX decisions, explore how AI tools are helping startups and enterprises ship better products, faster.",
     date: "July 18, 2026",
     readTime: "5 min read",
-    image: "/office-hero.png",
+    image: "/blog_1.jpg",
     content: [
       "AI is no longer a bolt-on feature — it's becoming part of how digital products get built, tested, and refined at every stage. Teams that once relied purely on manual QA cycles are now using AI-driven testing tools that catch regressions before they reach production.",
       "Beyond testing, AI is reshaping how design decisions get made. Instead of relying only on intuition or slow A/B tests, product teams are using AI models to simulate user behavior, predict friction points, and prioritize which features to build next.",
@@ -21,7 +21,7 @@ const posts = [
     excerpt:
       "Scaling too fast without the right architecture can break your product. Here are the warning signs and how to fix them early.",
     date: "July 10, 2026",
-    image: "/office-workspace.png",
+    image: "/blog_2.jpg",
     content: [
       "Every startup eventually hits a wall where the systems that got them to launch start working against them. The tricky part is that these warning signs are often subtle until they aren't.",
       "The first sign is slow deploys. If shipping a small fix takes hours instead of minutes, your pipeline is holding the product hostage.",
@@ -37,7 +37,7 @@ const posts = [
     excerpt:
       "Minimalism, motion design, and accessibility-first thinking are shaping how users experience digital products this year.",
     date: "June 29, 2026",
-    image: "/office-team.png",
+    image: "/blog_3.jpg",
     content: [
       "Design trends move fast, but 2026 is shaping up to be less about flashy visuals and more about restraint, clarity, and inclusivity.",
       "Minimalism is back, but it's a more confident minimalism — fewer decorative elements, but bolder typography and more intentional whitespace that guides the eye rather than just clearing clutter.",
@@ -52,7 +52,7 @@ const posts = [
     excerpt:
       "A look at how continuous collaboration between businesses and their tech partners drives better outcomes over time.",
     date: "June 15, 2026",
-    image: "/office-workspace.png",
+    image: "/blog_4.jpg",
     content: [
       "One-off projects can solve an immediate problem, but they rarely build lasting value. A team that only shows up for a single sprint never gets the chance to understand the business behind the product.",
       "Long-term partnerships work differently. The tech partner learns the product's history, the reasoning behind past decisions, and the constraints that shaped the current architecture — context that makes every future decision faster and better informed.",
@@ -66,7 +66,7 @@ const posts = [
     excerpt:
       "Security shouldn't be an afterthought. Here's a practical checklist every team should run through before launch.",
     date: "June 2, 2026",
-    image: "/office-team.png",
+    image: "/blog_5.jpg",
     content: [
       "Security gets treated as a final checkbox far too often, when really it needs to be part of the build process from day one. Here's a practical starting checklist for any team shipping a web app.",
       "Start with authentication: enforce strong password policies, support multi-factor authentication, and never store passwords in plain text — use a proper hashing algorithm.",
@@ -83,7 +83,7 @@ const posts = [
       "How we help founders go from a rough concept to a working, testable product in weeks, not months.",
     date: "May 20, 2026",
     readTime: "5 min read",
-    image: "/office-hero.png",
+    image: "/blog_6.jpg",
     content: [
       "Founders often come to us with a strong idea but no clear path to a testable product. Our framework is built to close that gap fast, without cutting corners that come back to bite later.",
       "We start with a scoping sprint — a short, focused session to define the single core problem the MVP needs to solve, and to explicitly cut everything that isn't essential to proving it.",
