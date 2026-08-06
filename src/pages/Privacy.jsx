@@ -6,7 +6,7 @@ const Privacy = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&auto=format&fit=crop&q=80')",
+            "url('/office-team.png')",
         }}
       />
       {/* Light overlay for readability */}

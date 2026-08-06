@@ -12,7 +12,7 @@ const projects = [
     ],
     tags: ["React", "Node.js", "MongoDB", "AWS"],
     image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=80",
+      "/office-hero.png",
   },
   {
     category: "PropTech SaaS",
@@ -26,7 +26,7 @@ const projects = [
     ],
     tags: ["React", "Express", "PostgreSQL", "Razorpay"],
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop&q=80",
+      "/office-team.png",
   },
   {
     category: "Enterprise SaaS",
@@ -40,7 +40,7 @@ const projects = [
     ],
     tags: ["React", "NestJS", "MySQL", "Docker"],
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
+      "/office-workspace.png",
   },
   {
     category: "E-Commerce",
@@ -54,7 +54,7 @@ const projects = [
     ],
     tags: ["Next.js", "Shopify", "Redis", "Cloudflare"],
     image:
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop&q=80",
+      "/office-team.png",
   },
 ]
 
@@ -69,7 +69,7 @@ const Portfolio = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&auto=format&fit=crop&q=80')",
+            "url('/office-workspace.png')",
         }}
       />
       {/* Light overlay for readability */}

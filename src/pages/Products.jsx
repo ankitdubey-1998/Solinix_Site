@@ -90,7 +90,7 @@ export default function Products() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&auto=format&fit=crop&q=80')",
+            "url('/office-hero.png')",
         }}
       />
       {/* Light overlay for readability */}

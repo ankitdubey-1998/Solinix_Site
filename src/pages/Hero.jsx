@@ -9,7 +9,7 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center animate-[kenburns_20s_ease-in-out_infinite]"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1600&auto=format&fit=crop&q=80')",
+            "url('/office-hero.png')",
         }}
       />
 

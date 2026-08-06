@@ -11,7 +11,7 @@ const Blog = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1600&auto=format&fit=crop&q=80')",
+            "url('/office-workspace.png')",
         }}
       />
       {/* Light overlay for readability */}

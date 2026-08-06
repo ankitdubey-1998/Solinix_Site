@@ -34,7 +34,7 @@ const Contact = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&auto=format&fit=crop&q=80')",
+            "url('/office-workspace.png')",
         }}
       />
       {/* Light overlay for readability */}
@@ -70,8 +70,8 @@ const Contact = () => {
             {/* Attractive image banner */}
             <div className="relative h-64 rounded-3xl overflow-hidden shadow-lg border border-slate-100">
               <img
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&auto=format&fit=crop&q=80"
-                alt="Our team at work"
+                src="/office-team.png"
+                alt="Our customer support team"
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-blue-950/90 px-6 py-4 flex items-center gap-3">

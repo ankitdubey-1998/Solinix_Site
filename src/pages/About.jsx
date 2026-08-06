@@ -52,7 +52,7 @@ const About = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1600&auto=format&fit=crop&q=80')",
+            "url('/office-workspace.png')",
         }}
       />
       {/* Light overlay for readability */}
@@ -106,7 +106,7 @@ const About = () => {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-100">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=900&auto=format&fit=crop&q=80"
+                src="/office-team.png"
                 alt="Our engineering and product team"
                 className="w-full h-80 object-cover"
               />
@@ -162,7 +162,7 @@ const About = () => {
         {/* Corporate image banner */}
         <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg mb-24">
           <img
-            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop&q=80"
+            src="/office-workspace.png"
             alt="Team collaborating in a modern office"
             className="w-full h-72 md:h-96 object-cover"
           />

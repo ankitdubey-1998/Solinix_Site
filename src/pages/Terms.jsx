@@ -6,7 +6,7 @@ const Terms = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?w=1600&auto=format&fit=crop&q=80')",
+            "url('/office-workspace.png')",
         }}
       />
       {/* Light overlay for readability */}

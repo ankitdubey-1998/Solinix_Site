@@ -13,37 +13,37 @@ const services = [
     icon: <FaCode />,
     title: "Custom Software Development",
     desc: "Scalable software solutions tailored to your specific business requirements, built with modern enterprise-grade technologies.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=80",
+    image: "/office-team.png",
   },
   {
     icon: <FaGlobe />,
     title: "Website Development",
     desc: "Responsive, fast and SEO-friendly websites with stunning designs that drive real results and business growth.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80",
+    image: "/office-workspace.png",
   },
   {
     icon: <FaMobileAlt />,
     title: "Mobile App Development",
     desc: "Android, iOS & cross-platform apps with seamless user experiences and native-level performance.",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop&q=80",
+    image: "/office-team.png",
   },
   {
     icon: <FaPaintBrush />,
     title: "UI/UX Design",
     desc: "Creative and intuitive designs that enhance engagement. User-centered, conversion-optimized and beautifully crafted.",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format&fit=crop&q=80",
+    image: "/office-workspace.png",
   },
   {
     icon: <FaBullhorn />,
     title: "Digital Marketing",
     desc: "Result-driven marketing strategies to grow your brand and reach. SEO, social media, paid campaigns and more.",
-    image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=800&auto=format&fit=crop&q=80",
+    image: "/office-team.png",
   },
   {
     icon: <FaCloud />,
     title: "Cloud & Maintenance",
     desc: "Secure hosting, cloud deployment and ongoing support to keep your software running at peak performance 24/7.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80",
+    image: "/office-workspace.png",
   },
 ];
 
@@ -55,7 +55,7 @@ const Services = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&auto=format&fit=crop&q=80')",
+            "url('/office-hero.png')",
         }}
       />
       {/* Light overlay for readability */}
@@ -118,7 +118,7 @@ const Services = () => {
         {/* Corporate image banner */}
         <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg mb-20">
           <img
-            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop&q=80"
+            src="/office-team.png"
             alt="Team planning a project together"
             className="w-full h-72 md:h-96 object-cover"
           />
